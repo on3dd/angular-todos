@@ -1,0 +1,16 @@
+<div class="add-items d-flex">
+  <input
+    type="text"
+    class="form-control todo-list-input"
+    placeholder="What do you need to do today?"
+    [formControl]="formControl"
+  />
+
+  <button
+    class="add btn btn-primary font-weight-bold todo-list-add-btn"
+    [disabled]="!formControl.valid"
+    (click)="submit()"
+  >
+    Add
+  </button>
+</div>

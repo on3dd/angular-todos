@@ -1,0 +1,17 @@
+<div class="list-wrapper">
+  <ul class="d-flex flex-column-reverse todo-list">
+    <ng-container *ngFor="let item of items; trackBy: todosTrackBy">
+      <li [class.completed]="item.completed">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="checkbox" type="checkbox" [checked]="item.completed" (change)="toggle.emit(item)" />
+            {{ item.title }}
+            <i class="input-helper"></i>
+          </label>
+        </div>
+
+        <i class="remove mdi mdi-close-circle-outline" (click)="delete.emit(item)"></i>
+      </li>
+    </ng-container>
+  </ul>
+</div>
