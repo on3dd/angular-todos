@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { TodosService } from './todos/services/todos.service';
 import { BehaviorSubject, tap } from 'rxjs';
 
-import { Todo } from './todos/models/todos.model';
 import { ToastsService } from './toasts/services/toasts.service';
+import { Todo } from './todos/models/todos.model';
+import { TodosService } from './todos/services/todos.service';
 
 @Component({
   selector: 'app-root',

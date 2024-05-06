@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ToastsService } from './services/toasts.service';
+import { NgModule } from '@angular/core';
+import { NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ToastsContainerComponent } from './components/toasts-container/toasts-container.component';
-import { NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
+import { ToastsService } from './services/toasts.service';
 
 @NgModule({
   declarations: [ToastsContainerComponent],
