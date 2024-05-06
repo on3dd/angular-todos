@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject, tap } from 'rxjs';
+import { BehaviorSubject, map, tap } from 'rxjs';
 
 import { ToastsService } from './toasts/services/toasts.service';
 import { Todo } from './todos/models/todos.model';
@@ -13,6 +13,8 @@ export class AppComponent implements OnInit {
   title = 'todos-service-based';
 
   todos$ = new BehaviorSubject<Todo[]>([]);
+
+  todosCount$ = this.todos$.pipe(map((todos) => todos.length));
 
   constructor(
     private readonly toastsService: ToastsService,
