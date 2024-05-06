@@ -4,9 +4,10 @@ TODO: add proper description
 
 ## TODO
 
-- [x] Behavior subject
-- [ ] NgRx Store
-- [ ] NgRx Component Store
+- [x] Component store with Behavior subject - Angular 14
+- [x] Component store with Signals - Angular 17
+- [ ] NgRx Store - TBD
+- [ ] NgRx Component Store - TBD
 
 ## HTML & CSS
 
