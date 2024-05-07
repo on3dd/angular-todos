@@ -6,7 +6,7 @@ TODO: add proper description
 
 - [x] Component store with Behavior subject - Angular 14
 - [x] Component store with Signals - Angular 17
-- [ ] NgRx Store - TBD
+- [x] NgRx Store + NgRx Effects - Angular 14
 - [ ] NgRx Component Store - TBD
 
 ## HTML & CSS

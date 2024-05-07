@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
     "@ng-bootstrap/ng-bootstrap": "^14.2.0",
+    "@ngrx/effects": "^14.3.3",
     "@ngrx/store": "^14.3.3",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
@@ -48,5 +49,15 @@
     "prettier": "^3.2.5",
     "typescript": "~4.7.2",
     "@ngrx/eslint-plugin": "^14.3.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --relative"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix"
+    ]
   }
 }
