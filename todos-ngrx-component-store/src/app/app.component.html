@@ -1,0 +1,27 @@
+<div class="page-content page-container" id="page-content">
+  <div class="padding">
+    <div class="row container d-flex justify-content-center">
+      <div class="col-md-12">
+        <div class="card px-3">
+          <div class="card-body">
+            <h4 class="card-title">Awesome Todo list</h4>
+
+            @if (vm$ | async; as vm) {
+              <app-todos-input (added)="onTodoAdded($event)"></app-todos-input>
+
+              <div>Todos count: {{ vm.todosCount }}</div>
+
+              <app-todos-list
+                [items]="vm.todos"
+                (toggle)="onTodoToggled($event)"
+                (delete)="onTodoDeleted($event)"
+              ></app-todos-list>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-toasts-container></app-toasts-container>

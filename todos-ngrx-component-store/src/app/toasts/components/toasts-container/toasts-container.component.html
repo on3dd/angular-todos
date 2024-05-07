@@ -1,0 +1,14 @@
+@for (toast of toasts(); let idx = $index; track idx) {
+  <ngb-toast
+    [autohide]="true"
+    [delay]="toast.delay || 5000"
+    [ngClass]="{
+      'text-light': toast.type && toast.type !== 'default',
+      'bg-success': toast.type === 'success',
+      'bg-danger': toast.type === 'danger'
+    }"
+    (hidden)="removeToast(toast)"
+  >
+    {{ toast.text }}
+  </ngb-toast>
+}

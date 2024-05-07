@@ -1,24 +1,16 @@
 {
   "root": true,
-  "ignorePatterns": [
-    "projects/**/*"
-  ],
+  "ignorePatterns": ["projects/**/*"],
   "overrides": [
     {
-      "files": [
-        "*.ts"
-      ],
+      "files": ["*.ts"],
       "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
-      "plugins": [
-        "simple-import-sort",
-        "import",
-        "import-alias"
-      ],
+      "plugins": ["simple-import-sort", "import", "import-alias"],
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
@@ -40,10 +32,7 @@
         "import/newline-after-import": "error",
         "import/no-duplicates": "error",
         "import/no-default-export": "error",
-        "import/extensions": [
-          "error",
-          "never"
-        ],
+        "import/extensions": ["off"],
         "simple-import-sort/imports": "error",
         "sort-imports": "off",
         "import-alias/import-alias": [
@@ -76,22 +65,16 @@
       }
     },
     {
-      "files": [
-        "*.html"
-      ],
-      "extends": [
-        "plugin:@angular-eslint/template/recommended",
-        "plugin:@angular-eslint/template/accessibility"
-      ],
-      "rules": {}
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended", "plugin:@angular-eslint/template/accessibility"],
+      "rules": {
+        "@angular-eslint/template/interactive-supports-focus": ["off"],
+        "@angular-eslint/template/click-events-have-key-events": ["off"]
+      }
     },
     {
-      "files": [
-        "*.ts"
-      ],
-      "extends": [
-        "plugin:@ngrx/all-requiring-type-checking"
-      ]
+      "files": ["*.ts"],
+      "extends": ["plugin:@ngrx/all-requiring-type-checking"]
     }
   ]
 }

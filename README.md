@@ -2,12 +2,16 @@
 
 TODO: add proper description
 
-## TODO
+## Contents
 
 - [x] Component store with Behavior subject - Angular 14
 - [x] Component store with Signals - Angular 17
 - [x] NgRx Store + NgRx Effects - Angular 14
-- [ ] NgRx Component Store - TBD
+- [x] NgRx Component Store - Angular 17
+
+### Reflections
+
+TODO
 
 ## HTML & CSS
 
