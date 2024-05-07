@@ -4,14 +4,14 @@ TODO: add proper description
 
 ## Contents
 
-- [x] Component store with Behavior subject - Angular 14
-- [x] Component store with Signals - Angular 17
-- [x] NgRx Store + NgRx Effects - Angular 14
-- [x] NgRx Component Store - Angular 17
+- [x] [Component store with Behavior subject](/todos-service-based/) - Angular 14
+- [x] [Component store with Signals](/todos-service-based-signals/) - Angular 17
+- [x] [NgRx Store + NgRx Effects](/todos-ngrx-store/) - Angular 14
+- [x] [NgRx Component Store](/todos-ngrx-component-store/) - Angular 17
 
 ### Reflections
 
-TODO
+TODO: add my very important and highly respected thoughts
 
 ## HTML & CSS
 
