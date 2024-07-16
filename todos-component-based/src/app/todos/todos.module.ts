@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -7,10 +7,6 @@ import { TodosInputComponent } from './components/todos-input/todos-input.compon
 import { TodosListComponent } from './components/todos-list/todos-list.component';
 import { TodosService } from './services/todos.service';
 
-@NgModule({
-  declarations: [TodosInputComponent, TodosListComponent],
-  imports: [CommonModule, HttpClientModule, ReactiveFormsModule],
-  providers: [TodosService],
-  exports: [TodosInputComponent, TodosListComponent],
-})
+@NgModule({ declarations: [TodosInputComponent, TodosListComponent],
+    exports: [TodosInputComponent, TodosListComponent], imports: [CommonModule, ReactiveFormsModule], providers: [TodosService, provideHttpClient(withInterceptorsFromDi())] })
 export class TodosModule {}
