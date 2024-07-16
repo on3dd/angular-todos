@@ -16,6 +16,7 @@ TODO: add proper description
 - [ ] Fix issue with legacy peer deps
 - [ ] Migrate project to Nx Workpace
 - [ ] Create backend app
+- [ ] Unify husky & lint-staged settings between projects 
 
 ### Reflections
 

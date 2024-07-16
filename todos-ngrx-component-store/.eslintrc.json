@@ -4,11 +4,17 @@
   "overrides": [
     {
       "files": ["*.ts"],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json"
+        ],
+        "createDefaultProgram": true
+      },
       "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
         "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "airbnb-typescript/base",
+        "plugin:prettier/recommended"
       ],
       "plugins": ["simple-import-sort", "import", "import-alias"],
       "rules": {
@@ -74,7 +80,7 @@
     },
     {
       "files": ["*.ts"],
-      "extends": ["plugin:@ngrx/all-requiring-type-checking"]
+      "plugins": ["@ngrx"]
     }
   ]
 }
