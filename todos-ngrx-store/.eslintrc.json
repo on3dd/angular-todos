@@ -50,6 +50,7 @@
           "error",
           "never"
         ],
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
         "simple-import-sort/imports": "error",
         "sort-imports": "off",
         "import-alias/import-alias": [
@@ -94,9 +95,7 @@
       "files": [
         "*.ts"
       ],
-      "extends": [
-        "plugin:@ngrx/effects-requiring-type-checking"
-      ]
+      "plugins": ["@ngrx"]
     }
   ]
 }

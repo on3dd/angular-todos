@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EffectsModule } from '@ngrx/effects';
@@ -13,14 +13,13 @@ import { todosFeature } from './todos.reducer';
 
 @NgModule({
   declarations: [TodosInputComponent, TodosListComponent],
+  exports: [TodosInputComponent, TodosListComponent],
   imports: [
     CommonModule,
-    HttpClientModule,
     ReactiveFormsModule,
     StoreModule.forFeature(todosFeature),
     EffectsModule.forFeature([TodosEffects]),
   ],
-  providers: [TodosService],
-  exports: [TodosInputComponent, TodosListComponent],
+  providers: [TodosService, provideHttpClient(withInterceptorsFromDi())],
 })
 export class TodosModule {}
