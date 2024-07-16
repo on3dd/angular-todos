@@ -4,19 +4,19 @@ TODO: add proper description
 
 ## Contents
 
-- [x] [Component-based store with Behavior subject](/todos-component-based/) - Angular 14
-- [x] [Component-based store with Signals](/todos-component-based-signals/) - Angular 17
-- [ ] [Service-based store with Behavior subject](/todos-service-based/) - Angular 14
-- [ ] [Service-based store with Signals](/todos-service-based-signals/) - Angular 17
-- [x] [NgRx Store + NgRx Effects](/todos-ngrx-store/) - Angular 14
-- [x] [NgRx Component Store](/todos-ngrx-component-store/) - Angular 17
+- [x] [Component-based store with Behavior subject](/todos-component-based/) - Angular 18
+- [x] [Component-based store with Signals](/todos-component-based-signals/) - Angular 18
+- [ ] [Service-based store with Behavior subject](/todos-service-based/) - TODO
+- [ ] [Service-based store with Signals](/todos-service-based-signals/) - TODO
+- [x] [NgRx Store + NgRx Effects](/todos-ngrx-store/) - Angular 18
+- [x] [NgRx Component Store](/todos-ngrx-component-store/) - Angular 18
 
 ### Extra TODOs
-- [ ] Update all projects to Angular 18
+- [x] Update all projects to Angular 18
 - [ ] Fix issue with legacy peer deps
 - [ ] Migrate project to Nx Workpace
 - [ ] Create backend app
-- [ ] Unify husky & lint-staged settings between projects 
+- [ ] Unify eslint, husky & lint-staged settings between projects 
 
 ### Reflections
 
