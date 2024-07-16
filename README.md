@@ -15,6 +15,7 @@ TODO: add proper description
 - [ ] Update all projects to Angular 18
 - [ ] Fix issue with legacy peer deps
 - [ ] Migrate project to Nx Workpace
+- [ ] Create backend app
 
 ### Reflections
 
