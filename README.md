@@ -13,10 +13,11 @@ TODO: add proper description
 
 ### Extra TODOs
 - [x] Update all projects to Angular 18
-- [ ] Fix issue with legacy peer deps
+- [x] Fix issue with legacy peer deps
 - [ ] Migrate project to Nx Workpace
-- [ ] Create backend app
 - [ ] Unify eslint, husky & lint-staged settings between projects 
+- [ ] Add loading indicator
+- [ ] Create backend app
 
 ### Reflections
 
