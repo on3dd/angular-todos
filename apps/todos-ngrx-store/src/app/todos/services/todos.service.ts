@@ -2,8 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { shareReplay } from 'rxjs';
 
-import { environment } from '~/environments/environment';
-
+import { environment } from '../../../environments/environment';
 import { Todo } from '../models/todos.model';
 
 @Injectable()

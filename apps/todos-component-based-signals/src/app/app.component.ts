@@ -1,8 +1,7 @@
 import { Component, computed, inject, OnInit, signal } from '@angular/core';
+import { ToastsModule, ToastsService } from '@angular-todos/toasts';
 import { tap } from 'rxjs';
 
-import { ToastsService } from './toasts/services/toasts.service';
-import { ToastsModule } from './toasts/toasts.module';
 import { Todo } from './todos/models/todos.model';
 import { TodosService } from './todos/services/todos.service';
 import { TodosModule } from './todos/todos.module';

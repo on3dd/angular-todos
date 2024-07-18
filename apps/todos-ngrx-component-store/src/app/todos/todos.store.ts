@@ -1,9 +1,9 @@
 import { inject, Injectable } from '@angular/core';
+import { ToastsService } from '@angular-todos/toasts';
 import { ComponentStore } from '@ngrx/component-store';
 import { tapResponse } from '@ngrx/operators';
 import { map, mergeMap, tap } from 'rxjs';
 
-import { ToastsService } from '../toasts/services/toasts.service';
 import { Todo } from './models/todos.model';
 import { TodosService } from './services/todos.service';
 

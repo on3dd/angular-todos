@@ -1,8 +1,8 @@
 import { AsyncPipe } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ToastsModule } from '@angular-todos/toasts';
 
-import { ToastsModule } from './toasts/toasts.module';
 import { Todo } from './todos/models/todos.model';
 import { TodosModule } from './todos/todos.module';
 import { TodosStore } from './todos/todos.store';

@@ -2,9 +2,7 @@
   "root": true,
   "overrides": [
     {
-      "files": [
-        "*.ts"
-      ],
+      "files": ["*.ts"],
       "parserOptions": {
         "project": ["./tsconfig.json"]
       },
@@ -46,18 +44,20 @@
         ],
         "simple-import-sort/imports": "error",
         "sort-imports": "off",
-        "import-alias/import-alias": [
-          "error",
-          {
-            "relativeDepth": 2,
-            "aliases": [
-              {
-                "alias": "~",
-                "matcher": "^src"
-              }
-            ]
-          }
-        ],
+        // FIXME: doesn't work with nested tsconfig.json's...
+        // See https://github.com/microsoft/TypeScript/issues/20110
+        // "import-alias/import-alias": [
+        //   "error",
+        //   {
+        //     "relativeDepth": 2,
+        //     "aliases": [
+        //       {
+        //         "alias": "~",
+        //         "matcher": "^src"
+        //       }
+        //     ]
+        //   }
+        // ],
         "class-methods-use-this": "off",
         "lines-between-class-members": "off",
         "@typescript-eslint/unbound-method": [

@@ -1,9 +1,9 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "../../node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "todos-service-based": {
+    "todos-component-based": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -42,7 +42,7 @@
           "builder": "@angular/build:application",
           "options": {
             "outputPath": {
-              "base": "dist/todos-service-based"
+              "base": "dist/todos-component-based"
             },
             "index": "src/index.html",
             "polyfills": [
@@ -95,10 +95,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "todos-service-based:build:production"
+              "buildTarget": "todos-component-based:build:production"
             },
             "development": {
-              "buildTarget": "todos-service-based:build:development"
+              "buildTarget": "todos-component-based:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -106,7 +106,7 @@
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n",
           "options": {
-            "buildTarget": "todos-service-based:build"
+            "buildTarget": "todos-component-based:build"
           }
         },
         "lint": {

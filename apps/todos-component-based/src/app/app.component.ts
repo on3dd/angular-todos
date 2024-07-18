@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastsService } from '@angular-todos/toasts';
 import { BehaviorSubject, map, tap } from 'rxjs';
 
-import { ToastsService } from './toasts/services/toasts.service';
 import { Todo } from './todos/models/todos.model';
 import { TodosService } from './todos/services/todos.service';
 

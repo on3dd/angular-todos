@@ -1,9 +1,9 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "../../node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "todos-service-based-signals": {
+    "todos-component-based-signals": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -41,7 +41,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/todos-service-based-signals",
+            "outputPath": "dist/todos-component-based-signals",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -79,10 +79,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "todos-service-based-signals:build:production"
+              "buildTarget": "todos-component-based-signals:build:production"
             },
             "development": {
-              "buildTarget": "todos-service-based-signals:build:development"
+              "buildTarget": "todos-component-based-signals:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -90,7 +90,7 @@
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n",
           "options": {
-            "buildTarget": "todos-service-based-signals:build"
+            "buildTarget": "todos-component-based-signals:build"
           }
         },
         "lint": {

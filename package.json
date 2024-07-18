@@ -25,21 +25,30 @@
     "zone.js": "~0.14.7"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~18.0.0",
     "@angular-devkit/core": "~18.0.0",
+    "@angular-devkit/schematics": "~18.0.0",
     "@angular-eslint/builder": "18.0.0",
-    "@angular-eslint/eslint-plugin": "18.0.0",
-    "@angular-eslint/eslint-plugin-template": "18.0.0",
+    "@angular-eslint/eslint-plugin": "^18.0.1",
+    "@angular-eslint/eslint-plugin-template": "^18.0.1",
     "@angular-eslint/schematics": "18.0.0",
-    "@angular-eslint/template-parser": "18.0.0",
+    "@angular-eslint/template-parser": "^18.0.1",
     "@angular/build": "^18.0.0",
     "@angular/cli": "~18.0.0",
     "@angular/compiler-cli": "^18.0.0",
+    "@angular/language-service": "~18.0.0",
     "@angular/localize": "^18.0.0",
     "@ngrx/eslint-plugin": "^18.0.1",
     "@nx/angular": "^19.4.4",
     "@nx/eslint": "19.4.4",
+    "@nx/js": "19.4.4",
+    "@schematics/angular": "~18.0.0",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
+    "@typescript-eslint/utils": "^8.0.0-alpha.28",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-prettier": "^9.1.0",
@@ -64,5 +73,8 @@
     ]
   },
   "license": "ISC",
-  "workspaces": ["apps/*"]
+  "workspaces": [
+    "./apps/*",
+    "./libs/*"
+  ]
 }
