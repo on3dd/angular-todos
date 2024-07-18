@@ -16,7 +16,7 @@ TODO: add proper description
 - [x] Fix issue with legacy peer deps
 - [ ] Migrate all projects to Nx Workpaces
   - [x] todos-component-based
-  - [ ] todos-component-based-signals
+  - [x] todos-component-based-signals
   - [ ] todos-service-based
   - [ ] todos-service-based-signals
   - [ ] todos-ngrx-store
