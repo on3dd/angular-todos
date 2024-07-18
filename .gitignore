@@ -129,3 +129,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# nx & angular caches
+.nx/cache
+.nx/workspace-data
+.angular
