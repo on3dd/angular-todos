@@ -21,7 +21,8 @@ TODO: add proper description
   - [ ] todos-service-based-signals
   - [ ] todos-ngrx-store
   - [ ] todos-ngrx-component-store
-- [ ] Unify eslint, husky & lint-staged settings between projects 
+- [ ] Move shared components in Nx libs
+- [ ] Unify eslint, husky & lint-staged settings between projects
 - [ ] Add loading indicator
 - [ ] Create backend app
 
