@@ -14,13 +14,7 @@ TODO: add proper description
 ### Extra TODOs
 - [x] Update all projects to Angular 18
 - [x] Fix issue with legacy peer deps
-- [ ] Migrate all projects to Nx Workpaces
-  - [x] todos-component-based
-  - [x] todos-component-based-signals
-  - [ ] todos-service-based
-  - [ ] todos-service-based-signals
-  - [ ] todos-ngrx-store
-  - [ ] todos-ngrx-component-store
+- [x] Migrate all projects to Nx Workpaces
 - [ ] Move shared components in Nx libs
 - [ ] Unify eslint, husky & lint-staged settings between projects
 - [ ] Add loading indicator
