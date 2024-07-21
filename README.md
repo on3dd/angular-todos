@@ -16,9 +16,8 @@ TODO: add proper description
 - [x] Fix issue with legacy peer deps
 - [x] Migrate all projects to Nx Workpaces
 - [ ] Move shared components in Nx libs
-  - [x] Toasts
-  - [ ] Todos UI
-  - [ ] Todos API service
+  - [x] Toasts (for now only for todos-component-based)
+  - [x] Todos (for now only for todos-component-based)
   - [ ] Environments
 - [ ] Fix broken `nx lint` & `npm run lint` tasks (linting in editor works as usual)
 - [ ] Unify eslint, husky & lint-staged settings between projects
