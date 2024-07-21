@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastsService } from '@angular-todos/toasts';
+import { Todo, TodosApiService } from '@angular-todos/todos';
 import { BehaviorSubject, map, tap } from 'rxjs';
-
-import { Todo } from './todos/models/todos.model';
-import { TodosService } from './todos/services/todos.service';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +16,7 @@ export class AppComponent implements OnInit {
 
   constructor(
     private readonly toastsService: ToastsService,
-    private readonly todosService: TodosService,
+    private readonly todosService: TodosApiService,
   ) {}
 
   ngOnInit() {

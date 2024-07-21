@@ -2,11 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { shareReplay } from 'rxjs';
 
-import { environment } from '../../../environments/environment';
+// TODO: move environment in shared lib !
+import { environment } from '../../../../apps/todos-component-based/src/environments/environment';
 import { Todo } from '../models/todos.model';
 
 @Injectable()
-export class TodosService {
+export class TodosApiService {
   private readonly serverUrl = `${environment.API_URL}/todos`;
 
   constructor(private http: HttpClient) {}
