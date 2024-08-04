@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 
 import { Todo } from '../../models/todos.model';
 
@@ -8,11 +8,11 @@ import { Todo } from '../../models/todos.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TodosListComponent {
-  @Input() items: Todo[] = [];
+  items = input<Todo[]>([]);
 
-  @Output() toggle = new EventEmitter<Todo>();
+  toggle = output<Todo>();
 
-  @Output() delete = new EventEmitter<Todo>();
+  delete = output<Todo>();
 
   todosTrackBy(_idx: number, todo: Todo) {
     return todo.id;

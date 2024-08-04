@@ -11,9 +11,9 @@
     "lib": ["es2020", "dom"],
     "baseUrl": ".",
     "paths": {
+      "@angular-todos/environments": ["./libs/environments/src/lib/environment.ts"],
       "@angular-todos/toasts": ["./libs/toasts/src/index.ts"],
-      "@angular-todos/todos": ["./libs/todos/src/index.ts"],
-      "@angular-todos/environments": ["./libs/environments/src/lib/environment.ts"]
+      "@angular-todos/todos": ["./libs/todos/src/index.ts"]
     },
     "skipLibCheck": true
   }

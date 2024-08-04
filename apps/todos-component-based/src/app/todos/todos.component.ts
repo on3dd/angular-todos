@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, inject, OnInit, signal } from '@angular/core';
 import { ToastsService } from '@angular-todos/toasts';
 import { Todo, TodosApiService, TodosModule } from '@angular-todos/todos';
@@ -7,7 +6,7 @@ import { tap } from 'rxjs';
 @Component({
   selector: 'app-todos',
   standalone: true,
-  imports: [CommonModule, TodosModule],
+  imports: [TodosModule],
   templateUrl: './todos.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

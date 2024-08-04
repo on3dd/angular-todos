@@ -2,14 +2,10 @@
   <div class="card-body">
     <h4 class="card-title">Awesome Todo list</h4>
 
-    <app-todos-input (added)="onTodoAdded($event)"></app-todos-input>
+    <app-todos-input (added)="onTodoAdded($event)" />
 
     <div>Todos count: {{ todosCount() }}</div>
 
-    <app-todos-list
-      [items]="todos()"
-      (toggle)="onTodoToggled($event)"
-      (delete)="onTodoDeleted($event)"
-    />
+    <app-todos-list [items]="todos()" (toggle)="onTodoToggled($event)" (delete)="onTodoDeleted($event)" />
   </div>
 </div>

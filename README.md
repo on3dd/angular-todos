@@ -19,6 +19,7 @@ TODO: add proper description
   - [x] Todos
   - [x] Environments
 - [x] Unify eslint, husky & lint-staged settings between projects
+- [x] Run control flow and signal inputs & outputs migrations on all projects & libs
 - [ ] Add loading indicator
 - [ ] Create backend app using Nest.js
 - [ ] Migrate from Bootstrap to Angular Material (?)

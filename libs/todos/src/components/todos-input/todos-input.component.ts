@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, output } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -7,7 +7,7 @@ import { FormControl, Validators } from '@angular/forms';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TodosInputComponent {
-  @Output() added = new EventEmitter<string>();
+  added = output<string>();
 
   formControl = new FormControl('', { validators: [Validators.required] });
 

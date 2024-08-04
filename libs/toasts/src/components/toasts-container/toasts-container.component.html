@@ -1,4 +1,4 @@
-<ng-container *ngFor="let toast of toasts$ | async">
+@for (toast of toasts$ | async; track toast) {
   <ngb-toast
     [autohide]="true"
     [delay]="toast.delay || 5000"
@@ -11,4 +11,4 @@
   >
     {{ toast.text }}
   </ngb-toast>
-</ng-container>
+}

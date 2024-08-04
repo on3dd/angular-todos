@@ -1,6 +1,6 @@
 <div class="list-wrapper">
   <ul class="d-flex flex-column-reverse todo-list">
-    <ng-container *ngFor="let item of items; trackBy: todosTrackBy">
+    @for (item of items(); track todosTrackBy($index, item)) {
       <li [class.completed]="item.completed">
         <div class="form-check">
           <label class="form-check-label">
@@ -9,9 +9,8 @@
             <i class="input-helper"></i>
           </label>
         </div>
-
         <i class="remove mdi mdi-close-circle-outline" (click)="delete.emit(item)"></i>
       </li>
-    </ng-container>
+    }
   </ul>
 </div>
