@@ -1,38 +1,14 @@
-import { AsyncPipe } from '@angular/common';
-import { Component, inject, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 import { ToastsModule } from '@angular-todos/toasts';
-import { Todo, TodosModule as TodosUiModule } from '@angular-todos/todos';
 
-import { TodosStore } from './todos/todos.store';
+import { TodosComponent } from './todos/todos.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AsyncPipe, ToastsModule, TodosUiModule],
-  providers: [TodosStore],
+  imports: [ToastsModule, TodosComponent],
   templateUrl: './app.component.html',
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'todos-ngrx-component-store';
-
-  readonly store = inject(TodosStore);
-
-  readonly vm$ = this.store.vm$;
-
-  ngOnInit(): void {
-    this.store.load();
-  }
-
-  onTodoAdded(title: string) {
-    this.store.add({ title });
-  }
-
-  onTodoToggled(todo: Todo) {
-    this.store.toggle({ todo });
-  }
-
-  onTodoDeleted(todo: Todo) {
-    this.store.delete({ todo });
-  }
 }
