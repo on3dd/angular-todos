@@ -18,12 +18,12 @@ TODO: add proper description
   - [x] Toasts
   - [x] Todos
   - [ ] Environments
-- [ ] Move todos template & logic from root module/component into the todos module in all apps
-- [ ] Fix the "Failed to process project graph" issue when running any nx command 
+- [ ] Fix the "Failed to process project graph" issue when running any nx command
 - [x] Unify eslint, husky & lint-staged settings between projects
 - [ ] Add loading indicator
 - [ ] Create backend app
 - [ ] Migrate from Bootstrap to Angular Material (?)
+- [ ] Remove `@angular/localize` from deps
 
 ### Reflections
 

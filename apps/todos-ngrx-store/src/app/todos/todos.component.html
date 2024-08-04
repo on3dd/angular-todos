@@ -1,0 +1,16 @@
+<div class="card px-3">
+  <div class="card-body">
+    <h4 class="card-title">Awesome Todo list</h4>
+    <ng-container *ngIf="todosVm$ | async as vm">
+      <app-todos-input (added)="onTodoAdded($event)"></app-todos-input>
+
+      <div>Todos count: {{ vm.todosCount }}</div>
+
+      <app-todos-list
+        [items]="vm.todos"
+        (toggle)="onTodoToggled($event)"
+        (delete)="onTodoDeleted($event)"
+      />
+    </ng-container>
+  </div>
+</div>
