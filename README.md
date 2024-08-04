@@ -23,7 +23,6 @@ TODO: add proper description
 - [ ] Add loading indicator
 - [ ] Create backend app using Nest.js
 - [ ] Migrate from Bootstrap to Angular Material (?)
-- [ ] Remove `@angular/localize` from deps
 - [ ] Add light/dark theme switcher with automatic theme detection
 
 ### Reflections
