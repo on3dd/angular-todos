@@ -4,7 +4,6 @@ import { FormControl, Validators } from '@angular/forms';
 @Component({
   selector: 'app-todos-input',
   templateUrl: './todos-input.component.html',
-  styleUrls: ['./todos-input.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TodosInputComponent {
