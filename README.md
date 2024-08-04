@@ -18,7 +18,7 @@ TODO: add proper description
   - [x] Toasts (for now only for todos-component-based)
   - [x] Todos (for now only for todos-component-based)
   - [ ] Environments
-- [ ] Move todos template & logic from app module to the todos module in todos-ngrx-store  
+- [ ] Move todos template & logic from root module/component into the todos module in all apps
 - [ ] Investigate what causes the "Failed to process project graph" issue
 - [ ] Fix broken `nx lint` & `npm run lint` tasks (linting in editor works as usual)
 - [ ] Unify eslint, husky & lint-staged settings between projects
