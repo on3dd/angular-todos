@@ -15,15 +15,15 @@ TODO: add proper description
 - [x] Fix issue with legacy peer deps
 - [x] Migrate all projects to Nx Workpaces
 - [ ] Move shared components in Nx libs
-  - [x] Toasts (for now only for todos-component-based)
-  - [x] Todos (for now only for todos-component-based)
+  - [x] Toasts
+  - [x] Todos
   - [ ] Environments
 - [ ] Move todos template & logic from root module/component into the todos module in all apps
-- [ ] Investigate what causes the "Failed to process project graph" issue
-- [ ] Fix broken `nx lint` & `npm run lint` tasks (linting in editor works as usual)
-- [ ] Unify eslint, husky & lint-staged settings between projects
+- [ ] Fix the "Failed to process project graph" issue when running any nx command 
+- [x] Unify eslint, husky & lint-staged settings between projects
 - [ ] Add loading indicator
 - [ ] Create backend app
+- [ ] Migrate from Bootstrap to Angular Material (?)
 
 ### Reflections
 
