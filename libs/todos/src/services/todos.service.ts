@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from '@angular-todos/environments';
 import { shareReplay } from 'rxjs';
 
-// TODO: move environment in shared lib !
-import { environment } from '../../../../apps/todos-component-based/src/environments/environment';
 import { Todo } from '../models/todos.model';
 
 @Injectable()
