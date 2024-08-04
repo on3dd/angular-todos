@@ -18,7 +18,6 @@ TODO: add proper description
   - [x] Toasts
   - [x] Todos
   - [ ] Environments
-- [ ] Fix the "Failed to process project graph" issue when running any nx command
 - [x] Unify eslint, husky & lint-staged settings between projects
 - [ ] Add loading indicator
 - [ ] Create backend app
