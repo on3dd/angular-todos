@@ -14,15 +14,16 @@ TODO: add proper description
 - [x] Update all projects to Angular 18
 - [x] Fix issue with legacy peer deps
 - [x] Migrate all projects to Nx Workpaces
-- [ ] Move shared components in Nx libs
+- [x] Move shared components in Nx libs
   - [x] Toasts
   - [x] Todos
-  - [ ] Environments
+  - [x] Environments
 - [x] Unify eslint, husky & lint-staged settings between projects
 - [ ] Add loading indicator
-- [ ] Create backend app
+- [ ] Create backend app using Nest.js
 - [ ] Migrate from Bootstrap to Angular Material (?)
 - [ ] Remove `@angular/localize` from deps
+- [ ] Add light/dark theme switcher with automatic theme detection
 
 ### Reflections
 
