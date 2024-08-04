@@ -4,14 +4,13 @@ TODO: add proper description
 
 ## Contents
 
-- [x] [Component-based store with Behavior subject](/todos-component-based/) - Angular 18
-- [x] [Component-based store with Signals](/todos-component-based-signals/) - Angular 18
-- [ ] [Service-based store with Behavior subject](/todos-service-based/) - TODO
-- [ ] [Service-based store with Signals](/todos-service-based-signals/) - TODO
+- [x] [Component-based store](/todos-component-based/) - Angular 18
+- [ ] [Service-based store](/todos-service-based/) - TODO
 - [x] [NgRx Store + NgRx Effects](/todos-ngrx-store/) - Angular 18
 - [x] [NgRx Component Store](/todos-ngrx-component-store/) - Angular 18
 
-### Extra TODOs
+### TODO
+
 - [x] Update all projects to Angular 18
 - [x] Fix issue with legacy peer deps
 - [x] Migrate all projects to Nx Workpaces
@@ -19,7 +18,6 @@ TODO: add proper description
   - [x] Toasts (for now only for todos-component-based)
   - [x] Todos (for now only for todos-component-based)
   - [ ] Environments
-- [ ] Remove `todos-component-based-signals` and migrate `todos-component-based` to signals as they are almost identical after recent changes
 - [ ] Move todos template & logic from app module to the todos module in todos-ngrx-store  
 - [ ] Investigate what causes the "Failed to process project graph" issue
 - [ ] Fix broken `nx lint` & `npm run lint` tasks (linting in editor works as usual)

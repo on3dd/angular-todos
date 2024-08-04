@@ -7,15 +7,13 @@
             <h4 class="card-title">Awesome Todo list</h4>
             <app-todos-input (added)="onTodoAdded($event)"></app-todos-input>
 
-            <div>Todos count: {{ todosCount$ | async }}</div>
+            <div>Todos count: {{ todosCount() }}</div>
 
-            <ng-container *ngIf="todos$ | async as todos">
-              <app-todos-list
-                [items]="todos"
-                (toggle)="onTodoToggled($event)"
-                (delete)="onTodoDeleted($event)"
-              ></app-todos-list>
-            </ng-container>
+            <app-todos-list
+              [items]="todos()"
+              (toggle)="onTodoToggled($event)"
+              (delete)="onTodoDeleted($event)"
+            ></app-todos-list>
           </div>
         </div>
       </div>

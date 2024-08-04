@@ -13,6 +13,7 @@
     "paths": {
       "@angular-todos/toasts": ["./libs/toasts/src/index.ts"],
       "@angular-todos/todos": ["./libs/todos/src/index.ts"]
-    }
+    },
+    "skipLibCheck": true
   }
 }
