@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Todo } from '@angular-todos/todos';
 import { Store } from '@ngrx/store';
 
-import { Todo } from './todos/models/todos.model';
 import { TodosActions } from './todos/todos.actions';
 import { selectTodosViewModel } from './todos/todos.selectors';
 

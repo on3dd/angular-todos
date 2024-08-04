@@ -1,6 +1,6 @@
+import { Todo } from '@angular-todos/todos';
 import { createFeature, createReducer, on } from '@ngrx/store';
 
-import { Todo } from './models/todos.model';
 import { TodosActions } from './todos.actions';
 
 type InitialState = {

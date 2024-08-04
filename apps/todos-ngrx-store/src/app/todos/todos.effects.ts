@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { ToastsService } from '@angular-todos/toasts';
+import { TodosApiService } from '@angular-todos/todos';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { catchError, map, mergeMap, of, tap } from 'rxjs';
 
-import { TodosService } from './services/todos.service';
 import { TodosActions } from './todos.actions';
 
 @Injectable()
@@ -98,7 +98,7 @@ export class TodosEffects {
 
   constructor(
     private actions$: Actions,
-    private todosService: TodosService,
+    private todosService: TodosApiService,
     private toastsService: ToastsService,
   ) {}
 }

@@ -1,6 +1,5 @@
+import { Todo } from '@angular-todos/todos';
 import { createActionGroup, emptyProps, props } from '@ngrx/store';
-
-import { Todo } from './models/todos.model';
 
 export const TodosActions = createActionGroup({
   source: 'Todos',
