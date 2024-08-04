@@ -1,11 +1,9 @@
 import { inject, Injectable } from '@angular/core';
 import { ToastsService } from '@angular-todos/toasts';
+import { Todo, TodosApiService } from '@angular-todos/todos';
 import { ComponentStore } from '@ngrx/component-store';
 import { tapResponse } from '@ngrx/operators';
 import { map, mergeMap, tap } from 'rxjs';
-
-import { Todo } from './models/todos.model';
-import { TodosService } from './services/todos.service';
 
 type TodosState = {
   todos: Todo[];
@@ -14,7 +12,7 @@ type TodosState = {
 
 @Injectable()
 export class TodosStore extends ComponentStore<TodosState> {
-  private readonly todosService = inject(TodosService);
+  private readonly todosService = inject(TodosApiService);
 
   private readonly toastsService = inject(ToastsService);
 

@@ -2,15 +2,14 @@ import { AsyncPipe } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ToastsModule } from '@angular-todos/toasts';
+import { Todo, TodosModule as TodosUiModule } from '@angular-todos/todos';
 
-import { Todo } from './todos/models/todos.model';
-import { TodosModule } from './todos/todos.module';
 import { TodosStore } from './todos/todos.store';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AsyncPipe, ToastsModule, TodosModule],
+  imports: [RouterOutlet, AsyncPipe, ToastsModule, TodosUiModule],
   providers: [TodosStore],
   templateUrl: './app.component.html',
 })
