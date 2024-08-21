@@ -4,10 +4,10 @@ TODO: add proper description
 
 ## Contents
 
-- [x] [Component-based store](/todos-component-based/) - Angular 18
-- [x] [Service-based store](/todos-service-based/) - Angular 18
-- [x] [NgRx Store + NgRx Effects](/todos-ngrx-store/) - Angular 18
-- [x] [NgRx Component Store](/todos-ngrx-component-store/) - Angular 18
+- [x] [Component-based store](/apps/todos-component-based/) - Angular 18
+- [x] [Service-based store](/apps/todos-service-based/) - Angular 18
+- [x] [NgRx Store + NgRx Effects](/apps/todos-ngrx-store/) - Angular 18
+- [x] [NgRx Component Store](/apps/todos-ngrx-component-store/) - Angular 18
 
 ### TODO
 
