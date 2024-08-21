@@ -20,6 +20,7 @@ TODO: add proper description
   - [x] Environments
 - [x] Unify eslint, husky & lint-staged settings between projects
 - [x] Run control flow and signal inputs & outputs migrations on all projects & libs
+- [ ] Deploy project somewhere
 
 ### Under consideration
 
