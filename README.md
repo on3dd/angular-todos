@@ -5,7 +5,7 @@ TODO: add proper description
 ## Contents
 
 - [x] [Component-based store](/todos-component-based/) - Angular 18
-- [ ] [Service-based store](/todos-service-based/) - TODO
+- [x] [Service-based store](/todos-service-based/) - Angular 18
 - [x] [NgRx Store + NgRx Effects](/todos-ngrx-store/) - Angular 18
 - [x] [NgRx Component Store](/todos-ngrx-component-store/) - Angular 18
 
@@ -20,10 +20,13 @@ TODO: add proper description
   - [x] Environments
 - [x] Unify eslint, husky & lint-staged settings between projects
 - [x] Run control flow and signal inputs & outputs migrations on all projects & libs
+
+### Under consideration
+
+- [ ] Migrate from Bootstrap
 - [ ] Add loading indicator
-- [ ] Create backend app using Nest.js
-- [ ] Migrate from Bootstrap to Angular Material (?)
 - [ ] Add light/dark theme switcher with automatic theme detection
+- [ ] Create backend app using Nest.js
 
 ### Reflections
 
