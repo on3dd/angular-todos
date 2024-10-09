@@ -22,17 +22,6 @@ TODO: add proper description
 - [x] Run control flow and signal inputs & outputs migrations on all projects & libs
 - [ ] Deploy project somewhere
 
-### Under consideration
-
-- [ ] Migrate from Bootstrap
-- [ ] Add loading indicator
-- [ ] Add light/dark theme switcher with automatic theme detection
-- [ ] Create backend app using Nest.js
-
-### Reflections
-
-TODO: add my very important and highly respected thoughts
-
 ## HTML & CSS
 
 https://bbbootstrap.com/snippets/awesome-todo-list-template-25095891#
