@@ -8,6 +8,7 @@ TODO: add proper description
 - [x] [Service-based store](/apps/todos-service-based/) - Angular 18
 - [x] [NgRx Store + NgRx Effects](/apps/todos-ngrx-store/) - Angular 18
 - [x] [NgRx Component Store](/apps/todos-ngrx-component-store/) - Angular 18
+- [ ] NgRx Signal Store - TBD
 
 ### TODO
 
